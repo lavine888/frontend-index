@@ -4,7 +4,7 @@ This repository is the **collection / index form** of the 18 frontend Skills fro
 
 ## Snapshot policy
 
-- The 18 top-level Skill names are preserved.
+- All 18 Skill names are preserved under `skills/`.
 - The 16 compact Skills keep their uploaded `SKILL.md` entry directly in this repository; companion files may also be retained where useful for browsing or execution.
 - Two large, self-contained Skills are pinned as Git submodules so their full template/reference/media trees remain available without flattening tens of megabytes into the index repository.
 - Third-party licenses remain with their respective upstream projects/content.
@@ -37,7 +37,10 @@ This repository is the **collection / index form** of the 18 frontend Skills fro
 
 `frontend-slides` and `huashu-design` contain much larger template / example / script / media trees than the other Skills. Pinning them to explicit commits keeps the index readable and reproducible while avoiding a flattened duplicate of large upstream repositories.
 
-The uploaded pack also contains locally adapted entry instructions, especially around execution boundaries. Those local differences are useful input for the later personalized repository, where the goal will be to select, merge, fix, and modernize the parts that are actually worth keeping.
+Their paths in this repository are:
+
+- `skills/frontend-slides`
+- `skills/huashu-design`
 
 ## Clone with the large Skills
 
