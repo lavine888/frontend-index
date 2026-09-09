@@ -1,6 +1,6 @@
 [submodule "frontend-slides"]
-	path = frontend-slides
+	path = skills/frontend-slides
 	url = https://github.com/zarazhangrui/frontend-slides.git
 [submodule "huashu-design"]
-	path = huashu-design
+	path = skills/huashu-design
 	url = https://github.com/alchaincyf/huashu-design.git
