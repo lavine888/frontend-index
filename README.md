@@ -30,8 +30,8 @@
 | 📊 做图表、Dashboard、数据大屏 | [`echarts`](skills/echarts) |
 | 🧪 检查页面是不是真的能用 | [`webapp-testing`](skills/webapp-testing) · [`playwright`](skills/playwright) |
 | ⚡ 查 React / Next.js 性能问题 | [`web-perf`](skills/web-perf) · [`vercel-react-best-practices`](skills/vercel-react-best-practices) |
-| 🎨 做高保真概念稿 | [`huashu-design`](skills/huashu-design) |
-| 🖥️ 做网页演示 / Web Slides | [`frontend-slides`](skills/frontend-slides) |
+| 🎨 做高保真概念稿 | [`huashu-design`](https://github.com/alchaincyf/huashu-design/tree/a790f704d85f277cc93d2081b0840d00036969bb) |
+| 🖥️ 做网页演示 / Web Slides | [`frontend-slides`](https://github.com/zarazhangrui/frontend-slides/tree/9906a34d640d2111f724544cbc50f7f130569ae1) |
 
 > 把它当成一张 **Frontend Skill Map**：按任务拿工具，而不是把整个工具箱一次性倒在桌上。
 
@@ -82,8 +82,8 @@
 <tr><td><code>web-design-guidelines</code></td><td>设计审查</td><td>按 Web Interface Guidelines 审查 UI、UX、可访问性与界面规范。</td><td><a href="skills/web-design-guidelines"><code>skills/web-design-guidelines/</code></a></td></tr>
 
 <tr><th colspan="4" align="left">06 · 独立专项 / Specialty</th></tr>
-<tr><td><code>huashu-design</code></td><td>高保真设计</td><td>HTML 高保真原型、动画演示、设计方向对比与按需媒体导出。</td><td><a href="skills/huashu-design"><code>skills/huashu-design/</code></a> · submodule</td></tr>
-<tr><td><code>frontend-slides</code></td><td>Web Slides</td><td>从零制作或从 PPT 转换动画丰富的 16:9 HTML 演示文稿。</td><td><a href="skills/frontend-slides"><code>skills/frontend-slides/</code></a> · submodule</td></tr>
+<tr><td><code>huashu-design</code></td><td>高保真设计</td><td>HTML 高保真原型、动画演示、设计方向对比与按需媒体导出。</td><td><a href="https://github.com/alchaincyf/huashu-design/tree/a790f704d85f277cc93d2081b0840d00036969bb"><code>skills/huashu-design/</code></a> · submodule</td></tr>
+<tr><td><code>frontend-slides</code></td><td>Web Slides</td><td>从零制作或从 PPT 转换动画丰富的 16:9 HTML 演示文稿。</td><td><a href="https://github.com/zarazhangrui/frontend-slides/tree/9906a34d640d2111f724544cbc50f7f130569ae1"><code>skills/frontend-slides/</code></a> · submodule</td></tr>
 </tbody>
 </table>
 
@@ -151,7 +151,7 @@ frontend-index/
     └── frontend-slides/     # pinned submodule
 ```
 
-18 个 Skill 全部收进 `skills/`，首页保持干净；分类继续由上面的索引负责，不额外增加目录层级。
+18 个 Skill 统一收在 `skills/` 下；分类关系由上面的索引负责表达，物理目录保持一层扁平，方便浏览、复制和按需安装。
 
 ---
 
