@@ -2,32 +2,38 @@
 
 # Frontend Index
 
-### 18 个前端 Agent Skills 的可浏览索引与集合
+### 18 frontend Agent Skills, neatly shelved.
 
-从视觉设计、组件系统、数据可视化和 GSAP 动效，到 React 性能、Playwright、真实 UI 验收与专项 HTML 设计工作流。
+**Design · Components · Motion · Data Viz · Testing · Performance · Web Slides**
 
 [![Skills](https://img.shields.io/badge/Skills-18-2563EB?style=flat-square)](#skill-索引)
 [![Frontend](https://img.shields.io/badge/Focus-Frontend-0F172A?style=flat-square)](#skill-索引)
 [![Agent Skills](https://img.shields.io/badge/Format-SKILL.md-14B8A6?style=flat-square)](#怎么用)
+[![GitHub stars](https://img.shields.io/github/stars/lavine888/frontend-index?style=flat-square)](https://github.com/lavine888/frontend-index/stargazers)
+
+<br>
+
+**打开工具箱，找到你现在缺的那一块。**  
+想把页面做漂亮、把动效做顺、把图表做稳，或者只是想确认“这个页面到底能不能真的用”——这里都有对应入口。
 
 </div>
 
 ---
 
-## 这个仓库是做什么的
+## 🧭 先从你正在做的事开始
 
-`frontend-index` 是一个 **前端 Agent Skill 全集索引仓**。
+| 你现在想做什么 | 可以先看 |
+|---|---|
+| ✨ 页面更有设计感 | [`frontend-design`](frontend-design) · [`theme-factory`](theme-factory) |
+| 🧱 搭组件 / 做业务 UI | [`frontend-components`](frontend-components) · [`shadcn`](shadcn) · [`tailwind-design-system`](tailwind-design-system) |
+| 🎞️ 做滚动、时间轴和高级动效 | [`gsap`](gsap) |
+| 📊 做图表、Dashboard、数据大屏 | [`echarts`](echarts) |
+| 🧪 检查页面是不是真的能用 | [`webapp-testing`](webapp-testing) · [`playwright`](playwright) |
+| ⚡ 查 React / Next.js 性能问题 | [`web-perf`](web-perf) · [`vercel-react-best-practices`](vercel-react-best-practices) |
+| 🎨 做高保真概念稿 | [`huashu-design`](huashu-design) |
+| 🖥️ 做网页演示 / Web Slides | [`frontend-slides`](frontend-slides) |
 
-它参考 [`CityU-CS-Notes`](https://github.com/lavine888/CityU-CS-Notes) 的课程索引思路：先在首页把全部内容做成清晰可导航的目录，再让每一个条目进入自己的 Skill 目录。
-
-**这个仓库只负责“收全”，不负责“替你删”。**
-
-- 🗂️ **全集存档**：保留这套前端 Skills Pack 的 18 个独立入口。
-- 🧭 **快速索引**：按场景和类别找到对应 Skill，不需要背名称。
-- 🧩 **独立组合**：设计、组件、动效、图表、测试、性能等能力可以按项目选用。
-- 🔬 **精选版底座**：之后会另开一个仓库，专门做去重、修正和适合个人工作流的版本。
-
-> **全集 ≠ 建议 18 个全部全局加载。** 这里首先是 collection / catalog，不代表每次 Agent 工作都应该把所有 Skill 一次性塞进上下文。
+> 把它当成一张 **Frontend Skill Map**：按任务拿工具，而不是把整个工具箱一次性倒在桌上。
 
 ---
 
@@ -81,108 +87,85 @@
 </tbody>
 </table>
 
-**共 18 个 Skill。** 每个 Skill 都以 `SKILL.md` 为主要入口；部分能力还带有 `references/`、`modules/`、`scripts/`、模板或媒体资产。
+**18 / 18 Skills** · 每个目录以 `SKILL.md` 为主要入口；部分 Skill 还带有 `references/`、`modules/`、`scripts/`、示例、模板或媒体资产。
 
 ---
 
 ## 怎么用
 
-### 1. 当作前端能力地图
+### Browse
 
-先确定任务，再点进对应目录：
+最简单的方式就是从上面的索引点进去，先看目标 Skill 的 `SKILL.md`。
 
-```text
-做页面视觉         → frontend-design
-做 UI / 业务组件    → frontend-components / shadcn
-做滚动和时间轴动效 → gsap
-做数据大屏         → echarts
-做拖拽排序         → sortablejs-drag-sort
-验收页面是否真能用 → webapp-testing / playwright
-查 Next.js 性能    → vercel-react-best-practices
-做高保真概念 Demo  → huashu-design
-做 Web 演示文稿     → frontend-slides
-```
+### Clone
 
-### 2. 克隆完整集合
-
-两个大型 Skill 使用固定 commit 的 Git submodule，因此推荐：
+两个大型 Skill 使用固定 commit 的 Git submodule，完整克隆推荐：
 
 ```bash
 git clone --recurse-submodules https://github.com/lavine888/frontend-index.git
 ```
 
-如果已经普通 clone：
+已经普通 clone 过：
 
 ```bash
 git submodule update --init --recursive
 ```
 
-### 3. 按需安装
+### Pick what you need
 
-把需要的目录复制进你的 Agent Skill 目录。不同 Coding Agent 的路径约定不同，以你的实际环境为准，例如：
+需要哪个就把哪个目录放进对应 Agent / 项目的 Skills 路径。比如：
 
 ```bash
-# 共享 Skills
+# shared
 cp -R gsap ~/.agents/skills/gsap
 
-# 项目级隔离
+# project-local
 mkdir -p .agents/skills
 cp -R echarts .agents/skills/echarts
 ```
 
-不建议因为这个仓库叫“全集”就机械地一次性加载全部 18 个。
+不同 Coding Agent 的 Skill 路径可能不同，以实际环境为准。
 
 ---
 
-## 仓库结构
+## 仓库长什么样
 
 ```text
 frontend-index/
 ├── README.md
-├── SOURCES.md
 ├── .gitmodules
-├── qianduan/
+├── docs/
+│   ├── metadata/
+│   │   └── SOURCES.md
+│   └── archive/
+│       └── original-pack-readme.md
 ├── frontend-design/
 ├── frontend-components/
-├── shadcn/
-├── tailwind-design-system/
-├── theme-factory/
-├── tubiao-auto-icon-selector/
-├── echarts/
-├── sortablejs-drag-sort/
 ├── gsap/
-├── webapp-testing/
+├── echarts/
 ├── playwright/
-├── web-perf/
-├── vercel-react-best-practices/
-├── web-design-guidelines/
-├── web-coding-workflow/
-├── huashu-design/      # pinned submodule
-└── frontend-slides/    # pinned submodule
+├── ...
+├── huashu-design/       # pinned submodule
+└── frontend-slides/     # pinned submodule
 ```
 
----
-
-## 来源与 License
-
-这套集合包含不同作者、不同来源和不同许可证的 Skill，因此**不使用一个顶层许可证覆盖全部第三方内容**。
-
-- 已有 License / 作者 / 版本信息尽量原样保留。
-- 两个大型 Skill 固定到明确的 upstream commit，避免“永远指向最新”导致内容漂移。
-- 具体快照与来源关系见 [`SOURCES.md`](SOURCES.md)。
+18 个 Skill 保持在顶层，所以从 GitHub 首页就能直接进入；来源记录和历史说明则收进 `docs/`，不抢主视线。
 
 ---
 
-## 关于这个系列
+## Notes
 
-**仓库 1：`frontend-index`**  
-负责收集、索引、存档，不做强行删减。
+- 📦 [Sources & Snapshot Notes](docs/metadata/SOURCES.md) — 来源、快照方式、固定版本与许可证说明
+- 🗃️ [Original Pack README](docs/archive/original-pack-readme.md) — 收录包最初自带的说明，作为历史记录保留
 
-**仓库 2：Frontend Skill Kit（下一步）**  
-会从这里出发，把重合能力、过时流程和有问题的实现拆掉，重新组合成更适合实际 Coding Agent / Codex 工作流的轻量版本。
+第三方 Skill 的许可证与署名以各自目录 / 上游项目为准。
 
 ---
 
-整理：[@lavine888](https://github.com/lavine888)
+<div align="center">
 
-如果这个索引对你有帮助，可以点个 **Star**。
+Built & indexed by [@lavine888](https://github.com/lavine888)
+
+**If this shelf saves you some searching, leave a ⭐.**
+
+</div>
